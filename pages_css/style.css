@@ -1,0 +1,163 @@
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: var(--font-family);
+	line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.global-header .nav-list a:hover,
+a:focus {
+  color: var(--ocean);
+}
+
+.nav-list a {
+  color: var(--navy-blue);
+  font-size: medium;
+  text-decoration: none;
+}
+.email,.tel {
+  color: var(--slate);
+  text-decoration: none;
+}
+
+.hero-image {
+	background-color: var(--navy-blue);
+	color: var(--white);
+	text-align: center;
+}
+
+.hero-button {
+	background-color: var(--iris);
+	color: var(--white);
+	width: 169px;
+	height: 56px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.hero-button:hover {
+	background-color:var(--light-slate) ;
+}
+
+.list-skils {
+  display: flex;
+}
+
+.title-skils {
+	color: var(--navy-blue);
+}
+
+.text-skils {
+	color: var(--slate);
+}
+
+.title {
+	color: var(--navy-blue);
+	text-align: center;
+}
+
+.list-img {
+	display: flex;
+}
+
+.section-our-team {
+	background-color: var(--cloud);
+}
+
+.list-photo {
+	display: flex;
+}
+.photo {
+	border: none;
+	background-color: var(--white);
+}
+
+.footer {
+    background-color: var(--navy-blue);
+    color: var(--cloud);
+  }
+
+  .blue {
+    color:blue;
+  }
+
+  .clud {
+    color: var(--cloud);
+  }
+
+  .text-footer {
+    width: 264px;
+    height: 72px;
+  }
+
+  .list-button {
+    display: flex;
+  }
+
+  .button {
+    width: 69px;
+    height: 48px;
+    background-color: var(--cloud);
+    color: var(--ocean);
+    border: none;
+  }
+
+  .button:focus,
+  .button:hover {
+    color: var(--cornflower);
+    cursor: pointer;
+  }
+
+  .button-first {
+    background-color: var(--iris);
+    color: var(--cloud);
+  }
+
+  .button-first:hover,
+  .button-first:focus {
+    color: var(--ocean)S;
+    cursor: pointer;
+  }
+
+  .list-projects {
+    display: flex;
+  }
+
+  .list-item-img {
+    border: solid  var(--cornflower);
+    color: var(--navy-blue);
+  }
+
+  .img {
+    width: 360px;
+    height: 300px;
+  }
+
+  .title-img {
+    color:var(--navy-blue);
+  }
+  
+  .text-img {
+    color: var(--slate);
+  }
+
