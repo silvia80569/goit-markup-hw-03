@@ -14,9 +14,7 @@
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
 }
-*,
-*::before
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -26,9 +24,21 @@ body {
 	  line-height: 1.5;
   }
 
+.title {
+	color: var(--navy-blue);
+	text-align: center;
+  text-transform: capitalize;
+}
+
 ul {
   list-style-type: none;
 }
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   width: 1200px;
 }
@@ -37,11 +47,12 @@ ul {
 .global-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: solid var(--cornflower);
 }
-
-.nav {
+.global-header .nav-list {
   display: flex;
+  align-items: center;
 }
 
 .global-header .nav-list a:hover,
@@ -49,18 +60,17 @@ a:focus {
   color: var(--ocean);
 }
 
-.nav-list{
-  display: flex;
-}
 .nav-list a {
   color: var(--navy-blue);
   font-size: medium;
   text-decoration: none;
+  padding-right: 10px;
 }
 
 .conact,.item-contact{
   color: var(--slate);
   text-decoration: none;
+  margin-right: 10px;
 }
 
 .item-contact:hover {
@@ -71,19 +81,23 @@ a:focus {
 .hero-image {
   height: 600px;
 	background-color: var(--navy-blue);
-	color: var(--white);
-  text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+ .title-hero {
+  color: var(--white);
+  font-size: x-large;
+  text-transform: capitalize;
+ }
 
 .hero-button {
 	background-color: var(--iris);
 	color: var(--white);
 	width: 169px;
 	height: 56px;
+  margin-top: 15px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -92,47 +106,53 @@ a:focus {
 	background-color:var(--light-slate) ;
 }
 
+
 /* styles skils*/
 .list-skils {
+  width: 1200px;
   display: flex;
   justify-content: center;
-}
-.title-skils {
-	color: var(--navy-blue);
+  gap: 20px;
+  color: var(--navy-blue);
 }
 
 .text-skils {
 	color: var(--slate);
 }
 
-.title {
-	color: var(--navy-blue);
-	text-align: center;
-  text-transform: capitalize;
-}
-
+/*styles img index*/
 .list-img {
 	display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* styles our team*/
-.section-our-team {
+ .our-team {
 	background-color: var(--cloud);
+  height: 600px;
 }
 
 .list-photo {
-	display: flex;
-  justify-content: center;
+  display: flex;
+  gap: 20px;
+
 }
+
 .photo {
 	border: none;
 	background-color: var(--white);
+}
+
+.card-content {
+  text-align: center;
 }
   
 /* styles footer*/
 .footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
+    text-align: justify;
   }
 
   .blue {
@@ -146,6 +166,7 @@ a:focus {
   .text-footer {
     width: 264px;
     height: 72px;
+    margin-left: 20px;
   }
 
   /* section button portofolio*/
