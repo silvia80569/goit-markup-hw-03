@@ -47,13 +47,14 @@ ul {
 .global-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   border-bottom: solid var(--cornflower);
+
 }
 .global-header .nav-list {
   display: flex;
-  align-items: center;
-}
+  justify-content: flex-end;
+} 
 
 .global-header .nav-list a:hover,
 a:focus {
@@ -64,20 +65,20 @@ a:focus {
   color: var(--navy-blue);
   font-size: medium;
   text-decoration: none;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .conact,.item-contact{
   color: var(--slate);
   text-decoration: none;
-  margin-right: 10px;
+  padding-right:10px;
 }
 
 .item-contact:hover {
   color: var(--ocean);
 }
 
-/* styles hero*/
+/* styles hero index*/
 .hero-image {
   height: 600px;
 	background-color: var(--navy-blue);
@@ -90,6 +91,8 @@ a:focus {
   color: var(--white);
   font-size: x-large;
   text-transform: capitalize;
+
+
  }
 
 .hero-button {
@@ -107,13 +110,14 @@ a:focus {
 }
 
 
-/* styles skils*/
+/* styles skils index*/
 .list-skils {
   width: 1200px;
   display: flex;
   justify-content: center;
   gap: 20px;
   color: var(--navy-blue);
+  padding-top: 10%;
 }
 
 .text-skils {
@@ -123,20 +127,23 @@ a:focus {
 /*styles img index*/
 .list-img {
 	display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+
 }
 
-/* styles our team*/
+/* styles our team index*/
  .our-team {
 	background-color: var(--cloud);
   height: 600px;
 }
 
+.header-our-team {
+  padding-top: 5%;
+}
+
 .list-photo {
   display: flex;
-  gap: 20px;
-
+  justify-content: space-between;
 }
 
 .photo {
@@ -152,7 +159,7 @@ a:focus {
 .footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
-    text-align: justify;
+    height: 312px;
   }
 
   .blue {
@@ -163,23 +170,30 @@ a:focus {
     color: var(--cloud);
   }
 
+  .logo-footer {
+    padding-top: 5%;
+    margin-left: 10%;
+  }
   .text-footer {
     width: 264px;
     height: 72px;
-    margin-left: 20px;
+    margin-left: 10%;
   }
 
   /* section button portofolio*/
   .list-button {
     display: flex;
+    justify-content: center;
+    gap: 20px;  
+   
   }
 
   .button {
-    width: 69px;
-    height: 48px;
     background-color: var(--cloud);
     color: var(--ocean);
     border: none;
+    width: 116px;
+    height: 48px;
   }
 
   .button:focus,
@@ -191,6 +205,7 @@ a:focus {
   .button-first {
     background-color: var(--iris);
     color: var(--cloud);
+    width: 69px;
   }
 
   .button-first:hover,
@@ -199,9 +214,12 @@ a:focus {
     cursor: pointer;
   }
 
-  /* styles projects*/
-  .list-projects {
-    display: flex;
+  /* styles projects portofolio*/
+  .list-projects-portofolio {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
   }
 
   .list-item-img {
@@ -220,5 +238,9 @@ a:focus {
   
   .text-img {
     color: var(--slate);
+  }
+
+  .text-img-portofolio {
+    margin-left: 5%;
   }
 
