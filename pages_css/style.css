@@ -14,18 +14,31 @@
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
 }
-* {
+*,
+*::before
+*::after {
   box-sizing: border-box;
 }
 
 body {
     background-color: white;
     font-family: var(--font-family);
-	line-height: 1.5;
+	  line-height: 1.5;
 }
 
 ul {
   list-style-type: none;
+}
+
+/* styles nav*/
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid var(--cornflower);
+}
+
+.nav {
+  display: flex;
 }
 
 .global-header .nav-list a:hover,
@@ -33,17 +46,27 @@ a:focus {
   color: var(--ocean);
 }
 
+.nav-list{
+  display: flex;
+}
 .nav-list a {
   color: var(--navy-blue);
   font-size: medium;
   text-decoration: none;
+  margin-left: 30px;
 }
-.email,.tel {
+.conact,.item-contact{
   color: var(--slate);
   text-decoration: none;
+  margin-left: 30px;
+}
+.item-contact:hover {
+  color: var(--ocean);
 }
 
+/* styles hero*/
 .hero-image {
+  height: 600px;
 	background-color: var(--navy-blue);
 	color: var(--white);
 	text-align: center;
@@ -63,6 +86,7 @@ a:focus {
 	background-color:var(--light-slate) ;
 }
 
+/* styles skils*/
 .list-skils {
   display: flex;
 }
@@ -85,6 +109,7 @@ a:focus {
 	display: flex;
 }
 
+/* styles our team*/
 .section-our-team {
 	background-color: var(--cloud);
 }
@@ -96,7 +121,8 @@ a:focus {
 	border: none;
 	background-color: var(--white);
 }
-
+  
+/* styles footer*/
 .footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
@@ -115,6 +141,7 @@ a:focus {
     height: 72px;
   }
 
+  /* section button portofolio*/
   .list-button {
     display: flex;
   }
@@ -144,6 +171,7 @@ a:focus {
     cursor: pointer;
   }
 
+  /* styles projects*/
   .list-projects {
     display: flex;
   }
