@@ -24,10 +24,13 @@ body {
     background-color: white;
     font-family: var(--font-family);
 	  line-height: 1.5;
-}
+  }
 
 ul {
   list-style-type: none;
+}
+.container {
+  width: 1200px;
 }
 
 /* styles nav*/
@@ -53,13 +56,13 @@ a:focus {
   color: var(--navy-blue);
   font-size: medium;
   text-decoration: none;
-  margin-left: 30px;
 }
+
 .conact,.item-contact{
   color: var(--slate);
   text-decoration: none;
-  margin-left: 30px;
 }
+
 .item-contact:hover {
   color: var(--ocean);
 }
@@ -69,8 +72,11 @@ a:focus {
   height: 600px;
 	background-color: var(--navy-blue);
 	color: var(--white);
-	text-align: center;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-button {
@@ -89,8 +95,8 @@ a:focus {
 /* styles skils*/
 .list-skils {
   display: flex;
+  justify-content: center;
 }
-
 .title-skils {
 	color: var(--navy-blue);
 }
@@ -116,6 +122,7 @@ a:focus {
 
 .list-photo {
 	display: flex;
+  justify-content: center;
 }
 .photo {
 	border: none;
