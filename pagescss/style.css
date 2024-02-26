@@ -14,6 +14,7 @@
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -49,8 +50,8 @@ ul {
   justify-content: space-between;
   align-items: center; 
   border-bottom: solid var(--cornflower);
-
 }
+
 .global-header .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -80,19 +81,18 @@ a:focus {
 
 /* styles hero index*/
 .hero-image {
-  height: 600px;
 	background-color: var(--navy-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 94px;
 }
+
  .title-hero {
   color: var(--white);
   font-size: x-large;
   text-transform: capitalize;
-
-
  }
 
 .hero-button {
@@ -101,6 +101,7 @@ a:focus {
 	width: 169px;
 	height: 56px;
   margin-top: 15px;
+  border-radius: 5%;
 	text-align: center;
 	cursor: pointer;
 }
@@ -109,7 +110,6 @@ a:focus {
 	background-color:var(--light-slate) ;
 }
 
-
 /* styles skils index*/
 .list-skils {
   width: 1200px;
@@ -117,7 +117,7 @@ a:focus {
   justify-content: center;
   gap: 20px;
   color: var(--navy-blue);
-  padding-top: 10%;
+  padding: 94px 0px;
 }
 
 .text-skils {
@@ -128,13 +128,13 @@ a:focus {
 .list-img {
 	display: flex;
   justify-content: space-between;
-
+  padding: 94px 0px;
 }
 
 /* styles our team index*/
  .our-team {
 	background-color: var(--cloud);
-  height: 600px;
+padding: 94px 0px;
 }
 
 .header-our-team {
@@ -159,7 +159,6 @@ a:focus {
 .footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
-    height: 312px;
   }
 
   .blue {
@@ -171,9 +170,11 @@ a:focus {
   }
 
   .logo-footer {
-    padding-top: 5%;
+    font-size: large;
     margin-left: 10%;
+    padding-top: 5%;
   }
+
   .text-footer {
     width: 264px;
     height: 72px;
@@ -185,13 +186,14 @@ a:focus {
     display: flex;
     justify-content: center;
     gap: 20px;  
-   
+    padding-top: 94px;
   }
 
   .button {
     background-color: var(--cloud);
     color: var(--ocean);
     border: none;
+    border-radius: 5%;
     width: 116px;
     height: 48px;
   }
@@ -219,7 +221,7 @@ a:focus {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+    padding: 94px 0px;
   }
 
   .list-item-img {
