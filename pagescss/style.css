@@ -82,17 +82,17 @@ a:focus {
 /* styles hero index*/
 .hero-image {
 	background-color: var(--navy-blue);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 94px;
 }
 
  .title-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--white);
   font-size: x-large;
-  text-transform: capitalize;
  }
 
 .hero-button {
@@ -159,8 +159,17 @@ padding: 94px 0px;
 .footer {
     background-color: var(--navy-blue);
     color: var(--cloud);
+    height: 312px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+.logo-text-footer {
+  width: 264px;
+  height: 112px;
+  margin-left: 15%;
+}
   .blue {
     color:blue;
   }
@@ -171,14 +180,6 @@ padding: 94px 0px;
 
   .logo-footer {
     font-size: large;
-    margin-left: 10%;
-    padding-top: 5%;
-  }
-
-  .text-footer {
-    width: 264px;
-    height: 72px;
-    margin-left: 10%;
   }
 
   /* section button portofolio*/
