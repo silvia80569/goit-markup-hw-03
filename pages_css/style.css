@@ -141,17 +141,7 @@ ul {
 }
 
 /* Image Section */
-.title {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  color: var(--navy-blue);
-  padding-top: 10px;
-}
+
 .list-img {
   display: flex;
   justify-content: space-between;
